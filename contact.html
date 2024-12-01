@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>اتصل بنا</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">الرئيسية</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="planets.html">الكواكب</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="ابحث" aria-label="بحث">
+                        <button class="btn btn-outline-primary" type="submit">بحث</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-5">
+        <h2>أخبرنا برأيك</h2>
+        <form>
+            <div class="mb-3">
+                <label for="firstName" class="form-label">الاسم الأول</label>
+                <input type="text" id="firstName" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">اللقب</label>
+                <input type="text" id="lastName" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="birthDate" class="form-label">تاريخ الميلاد</label>
+                <input type="date" id="birthDate" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="gender" class="form-label">الجنس</label>
+                <select id="gender" class="form-select">
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="governorate" class="form-label">الولاية</label>
+                <select id="governorate" class="form-select" required>
+                    <option value="">اختر ولايتك</option>
+                    <option>أريانة</option>
+                    <option>باجة</option>
+                    <option>بن عروس</option>
+                    <option>بنزرت</option>
+                    <option>قابس</option>
+                    <option>قفصة</option>
+                    <option>جندوبة</option>
+                    <option>القيروان</option>
+                    <option>القصرين</option>
+                    <option>قبلي</option>
+                    <option>الكاف</option>
+                    <option>المهدية</option>
+                    <option>منوبة</option>
+                    <option>مدنين</option>
+                    <option>المنستير</option>
+                    <option>نابل</option>
+                    <option>صفاقس</option>
+                    <option>سيدي بوزيد</option>
+                    <option>سليانة</option>
+                    <option>سوسة</option>
+                    <option>تطاوين</option>
+                    <option>توزر</option>
+                    <option>تونس</option>
+                    <option>زغوان</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="feedback" class="form-label">رأيك</label>
+                <textarea id="feedback" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="rating" class="form-label">التقييم</label>
+                <input type="number" id="rating" class="form-control" min="1" max="5">
+            </div>
+            <button type="submit" class="btn btn-primary">إرسال</button>
+        </form>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 النظام الشمسي. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
